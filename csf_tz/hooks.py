@@ -265,13 +265,7 @@ fixtures = [
 # include js, css files in header of desk.html
 # app_include_css = "/assets/csf_tz/css/csf_tz.css"
 # app_include_js = "/assets/csf_tz/js/csf_tz.js"
-app_include_js = [
-    "/assets/js/select_dialog.min.js",
-    "/assets/js/to_console.min.js",
-    "/assets/js/jobcards.min.js",
-    "/assets/csf_tz/node_modules/vuetify/dist/vuetify.js",
-]
-
+app_include_js = "csf_tz.bundle.js"
 app_include_css = "/assets/csf_tz/css/theme.css"
 web_include_css = "/assets/csf_tz/css/theme.css"
 # include js, css files in header of web template
@@ -487,3 +481,5 @@ jenv = {"methods": ["generate_qrcode:csf_tz.custom_api.generate_qrcode"]}
 override_whitelisted_methods = {
     "frappe.desk.query_report.get_script": "csf_tz.csftz_hooks.query_report.get_script"
 }
+
+required_apps = ['hrms', 'lms']

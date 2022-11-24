@@ -376,6 +376,7 @@ doc_events = {
             "csf_tz.custom_api.calculate_price_reduction",
         ],
         "before_cancel": "csf_tz.custom_api.check_cancel_delivery_note",
+        "before_insert": "csf_tz.custom_api.batch_splitting",
     },
     "Delivery Note": {
         "on_submit": "csf_tz.custom_api.update_delivery_on_sales_invoice",

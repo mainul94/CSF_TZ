@@ -9,10 +9,14 @@
   "validate_net_rate",
   "fetch_default_tax_category",
   "enable_dependent_auto_permission",
+  "limit_uom_as_item_uom",
+  "show_customer_outstanding_in_sales_order",
   "column_break_3",
   "auto_pos_for_role",
   "is_manufacture",
   "allow_delete_in_sql_command",
+  "allow_batch_splitting",
+  "item_qty_poppup_message",
   "section_break_8",
   "sle_gle_reposting_start_date",
   "column_break_10",
@@ -83,12 +87,37 @@
    "fieldname": "enable_dependent_auto_permission",
    "fieldtype": "Check",
    "label": "Enable Dependent Auto Permission"
+  },
+  {
+   "default": "0",
+   "description": "if ticked, a popup message showing description will appear on sales invoice when item qty remaining is less to 0",
+   "fieldname": "item_qty_poppup_message",
+   "fieldtype": "Check",
+   "label": "Item Qty Poppup Massage"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_batch_splitting",
+   "fieldtype": "Check",
+   "label": "Allow Batch Splitting"
+  },
+  {
+   "default": "0",
+   "fieldname": "limit_uom_as_item_uom",
+   "fieldtype": "Check",
+   "label": "Limit UOM as per Item UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_customer_outstanding_in_sales_order",
+   "fieldtype": "Check",
+   "label": "Show Customer Outstanding in Sales Order"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-04-07 15:40:08.995602",
+ "modified": "2022-11-10 15:26:10.084553",
  "modified_by": "Administrator",
  "module": "CSF TZ",
  "name": "CSF TZ Settings",
